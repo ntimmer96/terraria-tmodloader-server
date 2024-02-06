@@ -12,11 +12,11 @@ latestVersion=$(curl -L --silent ${url} | grep "/tModLoader/tModLoader/releases/
 ### Since tmodloader 1.3 is not receiving updates anymore, changing the url and echo output to static ones (0.11.8.9).
 
 # downloadURL=${url}/download/v${latestVersion}/tModLoader.Linux.v${latestVersion}.zip
-downloadURL='https://github.com/tModLoader/tModLoader/releases/download/v0.11.8.9/tModLoader.Linux.v0.11.8.9.zip'
+downloadURL='https://github.com/tModLoader/tModLoader/releases/tag/v2023.12.3.1'
 curl -L --silent ${downloadURL} --output ${dest}/tmodloader-server.zip
 
 # echo "tModLoader: ${latestVersion}"
-echo "tModLoader: 0.11.8.9"
+echo "tModLoader: 1.4.4"
 
 
 # curl -L https://github.com/tModLoader/tModLoader/releases | grep "/tModLoader/tModLoader/releases/tag/v0." | head -1 | sed 's#^.*/tag/v##' | sed 's#".*$##'
